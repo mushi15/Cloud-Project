@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="#f7f7f7"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteroomadapter_rnum"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteroomadapter_rprice"
+        android:layout_marginLeft="10dp"
+        android:textSize="15dp"
+        android:layout_centerVertical="true"
+        android:textStyle="bold"
+        android:layout_toRightOf="@+id/deleteroomadapter_rnum"/>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteroomadapter_view"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:text="View"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/deleteroomadapter_update"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:text="Update"
+        android:layout_toLeftOf="@+id/deleteroomadapter_view"
+        android:visibility="gone"
+        />
+
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="#000"
+        android:id="@+id/deleteroomadapter_delete"
+        android:layout_toLeftOf="@+id/deleteroomadapter_update"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        />
+
+
+</RelativeLayout>
